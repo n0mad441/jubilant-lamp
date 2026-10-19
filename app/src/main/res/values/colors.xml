@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- sama dengan warna header tema bawaan (Sequoia) agar tidak ada kedipan saat dibuka -->
+    <color name="splash_bg">#161D11</color>
+    <color name="ic_bg">#231F20</color>
+</resources>

@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'id.akhtara.stokproduksi'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "id.akhtara.stokproduksi"
+        minSdk 21
+        targetSdk 34
+        versionCode 11
+        versionName "11.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // ditandatangani dengan kunci debug supaya APK release langsung bisa dipasang
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+// Tanpa dependensi tambahan: hanya framework Android bawaan.
